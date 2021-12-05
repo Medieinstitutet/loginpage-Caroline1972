@@ -1,26 +1,23 @@
-let firstName = document.querySelector('fname');
-let Password = document.querySelector('new_password');
-let btn = document.querySelector('btn');
+let username = document.getElementById("username");
+let password = document.getElementById("password");
+let bth = document.getElementById("btn");
 
+// LocalStorage function
+
+ localStorage.setItem("username", "janne");
+ localStorage.setItem("password", "test");
 //Login Function
-if(window.localStorage){
-localStorage.setItem("user", "janne");
-localStorage.setItem("pass", "test");
+ let user = localStorage.getItem("username");
+ let pass1 = localStorage.getItem("password");
+ let answer = document.getElementById("answer");
 
-let user = localStorage.getItem("user");
-let word = localStorage.getItem("word");
-
-let answer = document.querySelector(".answer");
-
-btn.addEventListener("click",() => {
-if(user === fname.value && word === new_password.value){
-    answer.innerHTML = "Welcome!";
-
-} else {
-    answer.innerHTML ="Username or Password isnt correct. Please try again";
-}
-});
-
-}else{
-    console.log("Not Supported");
-}
+ btn.addEventListener("click",() => { 
+  if(user == username.janne && pass1 == password.test){
+        answer.innerHTML = "Welcome!";
+    
+    } else {
+        (user !== username.janne && pass1 !== password.test);{
+        answer.innerHTML = "Error. Please try again";
+    } 
+ } 
+})

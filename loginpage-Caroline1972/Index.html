@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Inlämningsuppgift 1</title>
 </head>
     <header class="header">
@@ -12,26 +13,29 @@
        
     </header>
 <body>
-    <form>
+    <form class="form" id="form"></form>
         <div class="container">
-        <label for="name">Name</label>
+        <label>Username</label>
         <br>
-        <input type="text" class="fname" name="Name">
+        <input type="text" name="" id="username" placeholder="Write Your Name">
         <br>
-        <label for="password">Password</label>
+
+        <label>Password</label>
         <br>
-        <input type="text" class="new_password" name="Password">
+        <input type="text" name="" id="pass" placeholder=" Write You Password">
+        <br>
+        <hr>
+        
+        <button id="btn">Log In</button>
+
         </div>
-        <div class="container">
-        <button class="btn">Log In</button>
-        </div>
-        <div class="answer">
+        <div id="answer">
 
         </div>
       </form>
 
       
-<div id="footer"></div>
-<script src="script.js"></script>
+<footer></footer>
+
 </body>
 </html>
