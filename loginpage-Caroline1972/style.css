@@ -1,9 +1,60 @@
-.container {
-    position: center;
-    width: 10em;
-    padding: 2em;
-    border-radius: 0.5em;
-    border:1px solid rgb(28, 65, 107);
-    
-
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
+header, footer {
+    background: #123;
+    color: cornsilk;
+    min-height: 32px
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh;
+    background-color: cornflowerblue;
+}
+
+#logo {
+    color:cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+   
+}
+
+
+#nav input[type=text]{
+    padding: 6px;
+    margin-top: 6px;
+    font-size: 1rem;
+    border: none;
+    width: 150px;
+    color: rgb(19, 17, 17);
+}
+
+#nav button {
+    
+    padding: 6px;
+    background: #ddd;
+    font-size: 1rem;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+#nav input [type=test], #nav .form button {
+
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+}
+
+#nav input [type=text] {
+    border: 1px solid #ccc;
+}
+
